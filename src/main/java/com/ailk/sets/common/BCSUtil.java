@@ -226,7 +226,7 @@ public class BCSUtil {
 		String digestStr = "";
 		try {
 			 SecretKeySpec signingKey = new SecretKeySpec(
-			 "OtUTMq8xjSw4f2v9X4s8Wbgna7OfLT".getBytes(), "HmacSHA1");
+			 "xxx".getBytes(), "HmacSHA1");
 			 Mac mac = Mac.getInstance("HmacSHA1");
 
 			mac.init(signingKey);
