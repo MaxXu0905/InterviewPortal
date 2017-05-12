@@ -126,8 +126,7 @@ public class BCSUtil {
 	
 	public String getAccessJson()
 	{
-		String accessToken = ConfigProperties.getController("ACCESSTOKENURL") +"&client_id="+"lpzTfYczyf9jB3Uc0xluTWi3"+"&client_secret="+"wl2tRdlpkOPwERPG6uQwMqrbkNr8LANs";
-//		String accessToken = "https://openapi.baidu.com/oauth/2.0/token?grant_type=client_credentials&client_id=lpzTfYczyf9jB3Uc0xluTWi3&client_secret=wl2tRdlpkOPwERPG6uQwMqrbkNr8LANs";
+		String accessToken = ConfigProperties.getController("ACCESSTOKENURL") +"&client_id="+"xxx"+"&client_secret="+"xxx";
 		
 		return NetConnectionUtil.httpRequest(accessToken);
 	}
@@ -170,7 +169,7 @@ public class BCSUtil {
 		String digestStr = "";
 		try {
 			 SecretKeySpec signingKey = new SecretKeySpec(
-			 "OtUTMq8xjSw4f2v9X4s8Wbgna7OfLT".getBytes(), "HmacSHA1");
+			 "xxx".getBytes(), "HmacSHA1");
 			 Mac mac = Mac.getInstance("HmacSHA1");
 
 			mac.init(signingKey);
